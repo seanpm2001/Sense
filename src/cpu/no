@@ -1,0 +1,170 @@
+base.cc:    assert(fault == NoFault);
+base_dyn_inst_impl.hh:    // Initialize the fault to be NoFault.
+base_dyn_inst_impl.hh:    fault = NoFault;
+base_dyn_inst_impl.hh:    fault = NoFault;
+checker/cpu_impl.hh:    if (fault != NoFault) {
+checker/cpu_impl.hh:        Fault fault = NoFault;
+checker/cpu_impl.hh:                if (fault != NoFault) {
+checker/cpu_impl.hh:                    if (unverifiedInst->getFault() == NoFault) {
+checker/cpu_impl.hh:                        advancePC(NoFault);
+checker/cpu_impl.hh:            if (fault == NoFault) {
+checker/cpu_impl.hh:        if (fault == NoFault) {
+checker/cpu_impl.hh:        if (fault == NoFault) {
+checker/cpu_impl.hh:            if (fault == NoFault && unverifiedFault == NoFault) {
+checker/cpu_impl.hh:            } else if (fault != NoFault && unverifiedFault == NoFault) {
+checker/cpu_impl.hh:            } else if (fault == NoFault && unverifiedFault != NoFault) {
+checker/cpu_impl.hh:        if (fault != NoFault) {
+checker/cpu_impl.hh:        advancePC(NoFault);
+checker/cpu.cc:    Fault fault = NoFault;
+checker/cpu.cc:        if (predicate && !checked_flags && fault == NoFault && unverifiedReq) {
+checker/cpu.cc:        if (predicate && fault == NoFault &&
+checker/cpu.cc:        if (fault != NoFault) {
+checker/cpu.cc:                fault = NoFault;
+checker/cpu.cc:    Fault fault = NoFault;
+checker/cpu.cc:        if (predicate && !checked_flags && fault == NoFault && unverifiedReq) {
+checker/cpu.cc:        if (fault != NoFault || size_left == 0)
+checker/cpu.cc:            if (fault != NoFault && was_prefetch) {
+checker/cpu.cc:              fault = NoFault;
+kvm/base.cc:    if (fault != NoFault)
+minor/dyn_inst.cc:    else if (translationFault != NoFault)
+minor/dyn_inst.cc:    else if (inst.translationFault != NoFault)
+minor/execute.cc:        fault != NoFault ||
+minor/execute.cc:    if (fault == NoFault)
+minor/execute.cc:    if (inst->translationFault != NoFault) {
+minor/execute.cc:        if (fault != NoFault) {
+minor/execute.cc:    if (interrupt != NoFault) {
+minor/execute.cc:    return interrupt != NoFault;
+minor/execute.cc:            if (init_fault != NoFault) {
+minor/execute.cc:                assert(inst->translationFault != NoFault);
+minor/execute.cc:                init_fault = NoFault;
+minor/execute.cc:                inst->translationFault = NoFault;
+minor/execute.cc:        if (init_fault != NoFault) {
+minor/execute.cc:    fault = NoFault;
+minor/execute.cc:        if (completed_mem_inst && fault != NoFault) {
+minor/execute.cc:        if (fault != NoFault) {
+minor/execute.cc:    Fault fault = NoFault;
+minor/execute.cc:        fault == NoFault && /* No faults */
+minor/execute.cc:            if (fault == NoFault)
+minor/execute.cc:        if (completed_inst && !(issued_mem_ref && fault == NoFault)) {
+minor/decode.cc:                    output_inst->fault = NoFault;
+minor/pipe_data.hh:        fault(NoFault),
+minor/pipe_data.hh:    bool isFault() const { return fault != NoFault; }
+minor/fetch1.cc:    if (response->fault != NoFault) {
+minor/fetch1.cc:    if (request->isDiscardable() || request->fault != NoFault) {
+minor/fetch1.cc:    } else if (response->fault != NoFault) {
+minor/fetch1.cc:    if (response->fault != NoFault) {
+minor/lsq.cc:    if (inst->translationFault == NoFault) {
+minor/lsq.cc:             fault_ != NoFault ? fault_->name() : "");
+minor/lsq.cc:    if (fault_ != NoFault) {
+minor/lsq.cc:            if (inst->translationFault == NoFault) {
+minor/lsq.cc:             fault_ != NoFault ? fault_->name() : "");
+minor/lsq.cc:    if (fault_ != NoFault) {
+minor/lsq.cc:            if (isTranslationDelayed && inst->translationFault == NoFault) {
+minor/lsq.cc:        } else if (inst->translationFault == NoFault) {
+minor/lsq.cc:    assert(inst->translationFault == NoFault);
+minor/lsq.cc:    if (request->inst->translationFault != NoFault) {
+minor/lsq.cc:    assert(inst->translationFault == NoFault || inst->inLSQ);
+minor/lsq.cc:    assert(inst->translationFault == NoFault);
+minor/fetch1.hh:            fault(NoFault)
+minor/execute.hh:     *  fault is set if any non-NoFault fault is raised.
+minor/dyn_inst.hh:    MinorDynInst(InstId id_ = InstId(), Fault fault_ = NoFault) :
+minor/dyn_inst.hh:        fuIndex(0), inLSQ(false), translationFault(NoFault),
+minor/dyn_inst.hh:    bool isFault() const { return fault != NoFault; }
+minor/pipe_data.cc:    else if (fault != NoFault)
+o3/lsq_unit_impl.hh:    return NoFault;
+o3/lsq_unit_impl.hh:    Fault load_fault = NoFault;
+o3/lsq_unit_impl.hh:    if (load_fault == NoFault && !inst->readMemAccPredicate()) {
+o3/lsq_unit_impl.hh:        return NoFault;
+o3/lsq_unit_impl.hh:    if (inst->isTranslationDelayed() && load_fault == NoFault)
+o3/lsq_unit_impl.hh:    if (load_fault != NoFault && inst->translationCompleted() &&
+o3/lsq_unit_impl.hh:        return NoFault;
+o3/lsq_unit_impl.hh:    if (load_fault != NoFault || !inst->readPredicate()) {
+o3/lsq_unit_impl.hh:                (load_fault != NoFault ? "fault" : "predication"));
+o3/lsq_unit_impl.hh:        store_fault == NoFault)
+o3/lsq_unit_impl.hh:    assert(store_fault == NoFault);
+o3/lsq_unit_impl.hh:        if (inst->fault == NoFault) {
+o3/lsq_impl.hh:        inst->getFault() = NoFault;
+o3/lsq_impl.hh:            if (fault != NoFault)
+o3/lsq_impl.hh:        if (fault == NoFault) {
+o3/lsq_impl.hh:    if (fault == NoFault)
+o3/lsq_impl.hh:            for (i = 0; i < _fault.size() && _fault[i] == NoFault; i++);
+o3/lsq_impl.hh:                    _inst->fault = NoFault;
+o3/lsq_impl.hh:        for (int i = 0; i < _requests.size() && _fault[i] == NoFault; i++) {
+o3/commit_impl.hh:    interrupt = NoFault;
+o3/commit_impl.hh:        interrupt == NoFault;
+o3/commit_impl.hh:        interrupt = NoFault;
+o3/commit_impl.hh:        interrupt = NoFault;
+o3/commit_impl.hh:    if (interrupt != NoFault)
+o3/commit_impl.hh:        if (interrupt != NoFault)
+o3/commit_impl.hh:                    if (pc[tid].microPC() == 0 && interrupt == NoFault &&
+o3/commit_impl.hh:    if (!head_inst->isStore() && inst_fault == NoFault) {
+o3/commit_impl.hh:    if (inst_fault != NoFault) {
+o3/iew_impl.hh:        Fault fault = NoFault;
+o3/iew_impl.hh:                    fault == NoFault) {
+o3/iew_impl.hh:                    fault == NoFault) {
+o3/iew_impl.hh:                    inst->fault = NoFault;
+o3/iew_impl.hh:                    fault == NoFault) {
+o3/iew_impl.hh:                if (fault != NoFault || !inst->readPredicate() ||
+o3/iew_impl.hh:            if (inst->getFault() == NoFault) {
+o3/iew_impl.hh:        if (!inst->isSquashed() && inst->isExecuted() && inst->getFault() == NoFault) {
+o3/probe/elastic_trace.cc:        head_inst->getFault() == NoFault) {
+o3/probe/elastic_trace.cc:        if (head_inst->getFault() != NoFault) {
+o3/cpu.cc:    assert(interrupt != NoFault);
+o3/inst_queue_impl.hh:                    assert(squashed_inst->getFault() != NoFault ||
+o3/lsq_unit.hh:    Fault executeLoad(int lq_idx) { panic("Not implemented"); return NoFault; }
+o3/lsq_unit.hh:        return NoFault;
+o3/lsq_unit.hh:                return NoFault;
+o3/lsq_unit.hh:                return NoFault;
+o3/lsq_unit.hh:    return NoFault;
+o3/lsq_unit.hh:    return NoFault;
+o3/fetch_impl.hh:    Fault fault = NoFault;
+o3/fetch_impl.hh:    if (fault == NoFault) {
+simple/atomic.cc:    Fault fault = NoFault;
+simple/atomic.cc:        if (predicate && fault == NoFault &&
+simple/atomic.cc:        if (fault != NoFault) {
+simple/atomic.cc:                return NoFault;
+simple/atomic.cc:            if (req->isLockedRMW() && fault == NoFault) {
+simple/atomic.cc:    Fault fault = NoFault;
+simple/atomic.cc:        if (predicate && fault == NoFault) {
+simple/atomic.cc:        if (fault != NoFault || size_left == 0)
+simple/atomic.cc:            if (req->isLockedRMW() && fault == NoFault) {
+simple/atomic.cc:            if (fault != NoFault && req->isPrefetch()) {
+simple/atomic.cc:                return NoFault;
+simple/atomic.cc:    if (fault == NoFault && !req->getFlags().isSet(Request::NO_ACCESS)) {
+simple/atomic.cc:    if (fault != NoFault && req->isPrefetch()) {
+simple/atomic.cc:        return NoFault;
+simple/atomic.cc:        Fault fault = NoFault;
+simple/atomic.cc:        if (fault == NoFault) {
+simple/atomic.cc:                if (fault == NoFault) {
+simple/atomic.cc:                if (fault != NoFault &&
+simple/atomic.cc:        if (fault != NoFault || !t_info.stayAtPC)
+simple/timing.cc:    // fault may be NoFault in cases where a fault is suppressed,
+simple/timing.cc:    return NoFault;
+simple/timing.cc:    return NoFault;
+simple/timing.cc:    return NoFault;
+simple/timing.cc:    if (state->getFault() != NoFault) {
+simple/timing.cc:            state->setNoFault();
+simple/timing.cc:    if (fault == NoFault) {
+simple/timing.cc:    if (fault != NoFault) {
+simple/timing.cc:            if (fault != NoFault && traceData) {
+simple/timing.cc:        if (fault == NoFault)
+simple/timing.cc:        advanceInst(NoFault);
+simple/timing.cc:    if (fault == NoFault)
+simple/base.cc:        if (interrupt != NoFault) {
+simple/base.cc:    if (fault != NoFault) {
+Binary file simple/.timing.cc.swp matches
+static_inst.cc:        return NoFault;
+tags:MinorDynInst	minor/dyn_inst.hh	/^    MinorDynInst(InstId id_ = InstId(), Fault fault_ = NoFault) :$/;"	f	class:Minor::MinorDynInst
+tags:executeLoad	o3/lsq_unit.hh	/^    Fault executeLoad(int lq_idx) { panic("Not implemented"); return NoFault; }$/;"	f	class:LSQUnit
+tags:isFault	minor/dyn_inst.hh	/^    bool isFault() const { return fault != NoFault; }$/;"	f	class:Minor::MinorDynInst
+tags:isFault	minor/pipe_data.hh	/^    bool isFault() const { return fault != NoFault; }$/;"	f	class:Minor::ForwardLineData
+tags:setNoFault	translation.hh	/^    setNoFault()$/;"	f	class:WholeTranslationState
+translation.hh:        faults[0] = faults[1] = NoFault;
+translation.hh:        faults[0] = faults[1] = NoFault;
+translation.hh:            if (faults[0] == NoFault) {
+translation.hh:        else if (faults[0] != NoFault)
+translation.hh:        else if (faults[1] != NoFault)
+translation.hh:            return NoFault;
+translation.hh:    setNoFault()
+translation.hh:        faults[0] = faults[1] = NoFault;
+translation.hh:            if (state->getFault() == NoFault) {

@@ -1,0 +1,7 @@
+1. enfault resume execution
+    also then in enhandler how to handle recursive enfault
+    (e.g., exit(0) caused enfault again in the handler)
+2. re-fetch the evicted en blk
+3. change enprefetch to really prefetch (malloc'ed pointer) instead of load
+4. prime probe
+5. maybe implement se fault pass for faster development simulation

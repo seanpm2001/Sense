@@ -1,0 +1,63 @@
+2mm
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:02
+gem5 executing on sgx-workstation, pid 8547
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/2mm
+
+3mm
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:02
+gem5 executing on sgx-workstation, pid 8549
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/3mm
+
+adi
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:03
+gem5 executing on sgx-workstation, pid 8551
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/adi
+
+bicg
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:03
+gem5 executing on sgx-workstation, pid 8553
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/bicg
+
+cholesky
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:03
+gem5 executing on sgx-workstation, pid 8555
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/cholesky
+
+correlation
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:03
+gem5 executing on sgx-workstation, pid 8563
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/correlation
+
+covariance
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jan 30 2022 19:41:23
+gem5 started Jan 30 2022 21:05:03
+gem5 executing on sgx-workstation, pid 8565
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --l2_size=512KB --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/polybench-c-3.2/en/base/covariance
+

@@ -1,0 +1,14 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Jul 27 2022 01:58:28
+gem5 started Jul 28 2022 22:09:01
+gem5 executing on sgx-workstation, pid 11931
+command line: ./build/X86/gem5.opt configs/example/se.py --caches --l2cache --cpu-type=DerivO3CPU --num-cpus=1 -c /home/fan/en-gem5-fs/en-gem5/tests/test-progs/en_bench/fr/aes_no_hw
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+Te0 address: 0x605060
+Te3 address: 0x605c60
+8494
+Exiting @ tick 224589000 because exiting with last active thread context
